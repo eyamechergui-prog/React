@@ -1,0 +1,43 @@
+.container {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f7fa;
+}
+
+.title {
+  color: #123c69;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.destinations {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* Tablettes */
+@media (max-width: 950px) {
+  .destinations {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .container {
+    padding: 35px 5%;
+  }
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+
+  .destinations {
+    grid-template-columns: 1fr;
+  }
+}
